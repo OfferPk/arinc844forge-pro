@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#0a0f18; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111927" />
+      <stop offset="100%" stop-color="#0b111c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title & Header -->
+  <rect x="30" y="25" width="940" height="70" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="50" y="40" width="130" height="38" rx="6" fill="url(#blueGrad)" />
+  <text x="115" y="64" fill="#ffffff" font-size="16" font-weight="bold" text-anchor="middle">ARINC 844</text>
+  <text x="195" y="55" fill="#f1f5f9" font-size="18" font-weight="bold">ARINC844Forge Pro — Architecture &amp; Data Pipeline</text>
+  <text x="195" y="75" fill="#94a3b8" font-size="13">Commercial Aviation Electronic Logbook (ELB) &amp; Digital Airworthiness Release Pipeline</text>
+
+  <!-- Component 1: OOOI & Flight Leg -->
+  <rect x="30" y="115" width="280" height="200" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="45" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="170" y="150" fill="#38bdf8" font-size="14" font-weight="bold" text-anchor="middle">Flight Leg &amp; OOOI Engine</text>
+  <text x="45" y="185" fill="#cbd5e1" font-size="12">• Out-Off-On-In Automatic Detect</text>
+  <text x="45" y="210" fill="#cbd5e1" font-size="12">• Block &amp; Flight Hours Calculation</text>
+  <text x="45" y="235" fill="#cbd5e1" font-size="12">• Fuel Uplift / Burn Reconciliation</text>
+  <text x="45" y="260" fill="#cbd5e1" font-size="12">• Airframe Cycles &amp; Landings Log</text>
+  <text x="45" y="285" fill="#94a3b8" font-size="11">Standard: ARINC 844 Section 3</text>
+
+  <!-- Component 2: Defect & MEL Engine -->
+  <rect x="360" y="115" width="280" height="200" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="375" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="500" y="150" fill="#fbbf24" font-size="14" font-weight="bold" text-anchor="middle">Defect &amp; MEL Tracking</text>
+  <text x="375" y="185" fill="#cbd5e1" font-size="12">• PIREP / MAREP Lifecycle (ATA 100/2200)</text>
+  <text x="375" y="210" fill="#cbd5e1" font-size="12">• MMEL Category A/B/C/D Intervals</text>
+  <text x="375" y="235" fill="#cbd5e1" font-size="12">• Maintenance Rectification Action</text>
+  <text x="375" y="260" fill="#cbd5e1" font-size="12">• (M) &amp; (O) Operational Limitations</text>
+  <text x="375" y="285" fill="#94a3b8" font-size="11">Standard: ARINC 844 Section 4 &amp; CS-MMEL</text>
+
+  <!-- Component 3: Cryptographic Release -->
+  <rect x="690" y="115" width="280" height="200" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <rect x="705" y="130" width="250" height="30" rx="4" fill="#1e293b" />
+  <text x="830" y="150" fill="#34d399" font-size="14" font-weight="bold" text-anchor="middle">Airworthiness Release</text>
+  <text x="705" y="185" fill="#cbd5e1" font-size="12">• LAME Part 145 / Part 66 CRS</text>
+  <text x="705" y="210" fill="#cbd5e1" font-size="12">• Pilot-in-Command (PIC) Acceptance</text>
+  <text x="705" y="235" fill="#cbd5e1" font-size="12">• FAA AC 120-78A Digital Digest</text>
+  <text x="705" y="260" fill="#cbd5e1" font-size="12">• Sequential SHA-256 Hash Chain</text>
+  <text x="705" y="285" fill="#94a3b8" font-size="11">Standard: FAA AC 120-78A &amp; EASA Part 145</text>
+
+  <!-- Connecting Arrows -->
+  <line x1="310" y1="215" x2="360" y2="215" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+  <line x1="640" y1="215" x2="690" y2="215" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4" />
+
+  <!-- Output 1: ARINC 429 Discrete Bus -->
+  <rect x="30" y="345" width="455" height="225" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <text x="50" y="375" fill="#38bdf8" font-size="15" font-weight="bold">ARINC 429 Discrete Avionics Bus Telemetry</text>
+  <text x="50" y="405" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Label 232 (Hex 0x9A):</tspan> Airworthiness Dispatch Status &amp; Open MELs</text>
+  <text x="50" y="425" fill="#94a3b8" font-size="11">Bits 11-13 Dispatch State | Bit 14 CRS | Bit 15 PIC | Bits 16-19 MEL Count | Bit 32 Odd Parity</text>
+  <text x="50" y="455" fill="#cbd5e1" font-size="12"><tspan font-weight="bold" fill="#38bdf8">Label 233 (Hex 0x9B):</tspan> Sector Leg Number &amp; Revision Sequence</text>
+  <text x="50" y="475" fill="#94a3b8" font-size="11">Bits 11-18 Flight Leg Seq | Bits 19-24 Hash Chain Revision | Bits 29-30 SSM Normal</text>
+  <rect x="50" y="500" width="415" height="45" rx="6" fill="#060910" stroke="#1e293b" />
+  <text x="65" y="528" fill="#34d399" font-size="12" font-family="monospace">BUS BROADCAST: Word232=0xB008EC9A | Word233=0xB014B09B [PARITY OK]</text>
+
+  <!-- Output 2: 10-Point Normative Auditor -->
+  <rect x="515" y="345" width="455" height="225" rx="8" fill="url(#cardGrad)" stroke="#1e293b" />
+  <text x="535" y="375" fill="#34d399" font-size="15" font-weight="bold">10-Point Normative Regulatory Auditor</text>
+  <text x="535" y="405" fill="#cbd5e1" font-size="12">• Automated validation across ARINC 844, FAA AC 120-78A, EASA AMC 20-22</text>
+  <text x="535" y="430" fill="#cbd5e1" font-size="12">• OOOI chronology monotonicity check (Out ≤ Off &lt; On ≤ In)</text>
+  <text x="535" y="455" fill="#cbd5e1" font-size="12">• Cryptographic non-repudiation binding &amp; hash chain continuity</text>
+  <text x="535" y="480" fill="#cbd5e1" font-size="12">• Airframe continuous airworthiness release to service endorsement</text>
+  <rect x="535" y="500" width="415" height="45" rx="6" fill="#060910" stroke="#1e293b" />
+  <text x="550" y="528" fill="#38bdf8" font-size="12" font-family="monospace">AUDIT VERDICT: 10/10 CHECKS PASSED (100.0% COMPLIANT) [AIRWORTHY]</text>
+</svg>
